@@ -14,9 +14,15 @@ importers:
 
   astro-frontend:
     dependencies:
+      '@payloadcms/sdk':
+        specifier: ^3.89.0
+        version: 3.89.0(graphql@16.14.2)(typescript@5.7.3)
       astro:
         specifier: ^7.3.3
         version: 7.3.3(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@22.19.9)(sass@1.77.4)(tsx@4.22.4)
+      payload-cms:
+        specifier: workspace:*
+        version: link:../payload-cms
 
   payload-cms:
     dependencies:
@@ -1450,6 +1456,9 @@ packages:
       payload: 3.89.0
       react: ^19.0.1 || ^19.1.2 || ^19.2.1
       react-dom: ^19.0.1 || ^19.1.2 || ^19.2.1
+
+  '@payloadcms/sdk@3.89.0':
+    resolution: {integrity: sha512-+3jzBKJNkF7olNMfyudqQr7N5i5SToXVzA8Ua5BRYFqMXDDkUMsxjZOn2OWhodmWK0tGPCYEQK/Mw8MPfbObcQ==}
 
   '@payloadcms/translations@3.89.0':
     resolution: {integrity: sha512-XLPOdv9NoPcqr21zBTu0uyJk0qGRIF7JVl2H2UTecpweQSMlQCackhUKWz1LKBO7QcKgkNSVHFnMNcizRDcPDg==}
@@ -6314,6 +6323,18 @@ snapshots:
       - typescript
       - utf-8-validate
       - yjs
+
+  '@payloadcms/sdk@3.89.0(graphql@16.14.2)(typescript@5.7.3)':
+    dependencies:
+      payload: 3.89.0(graphql@16.14.2)(supports-color@7.2.0)(typescript@5.7.3)
+      qs-esm: 8.0.1
+      ts-essentials: 10.0.3(typescript@5.7.3)
+    transitivePeerDependencies:
+      - bufferutil
+      - graphql
+      - supports-color
+      - typescript
+      - utf-8-validate
 
   '@payloadcms/translations@3.89.0':
     dependencies:

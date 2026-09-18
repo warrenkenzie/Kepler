@@ -12,6 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@payloadcms/sdk": "^3.89.0",
+    "payload-cms": "workspace:*",
     "astro": "^7.3.3"
   },
   "allowScripts": {
