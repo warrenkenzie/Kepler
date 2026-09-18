@@ -1,0 +1,6 @@
+packages:
+  - "astro-frontend"
+  - "payload-cms"
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
